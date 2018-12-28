@@ -1,1 +1,1 @@
-# kargers-algorithm
+# Karger's randomized algorithm, Java Implementation
