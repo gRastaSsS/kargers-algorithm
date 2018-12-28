@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @BenchmarkMode(Mode.AverageTime)
 @State(Scope.Benchmark)
-@Fork(value = 2)
+@Fork(value = 2, jvmArgs = {"-Xms2G", "-Xmx2G"})
 @Warmup(iterations = 3)
 @Measurement(iterations = 7)
 public class AlgorithmBenchmark {
